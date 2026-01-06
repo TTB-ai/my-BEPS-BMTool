@@ -17,11 +17,11 @@ else:
     genai.configure(api_key=GOOGLE_API_KEY)
 
 # ==========================================
-# 2. 모델 설정 (Gemini 1.5 Pro 강제 지정)
+# 2. 모델 설정 (Gemini 2.5 Pro 강제 지정)
 # ==========================================
 # 사용자가 'Pro' 성능을 원하므로 모델을 명시적으로 지정하는 것이 좋습니다.
-# 최신 모델인 gemini-1.5-pro를 사용합니다.
-MODEL_NAME = "gemini-1.5-pro" 
+# 최신 모델인 gemini-2.5-pro를 사용합니다.
+MODEL_NAME = "gemini-2.5-pro" 
 
 # ==========================================
 # 3. 프롬프트 엔지니어링 (개발 최적화)
@@ -103,3 +103,4 @@ with col2:
                 st.error(f"생성 중 오류 발생: {e}")
     elif generate_btn:
         st.warning("아이디어를 입력해주세요!")
+
